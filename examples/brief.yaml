@@ -1,0 +1,33 @@
+# Example brief for a fictional coffee brand. Every name here is invented.
+brand:
+  name: Juniper & Ash Coffee Co.
+  colours: ["#1F6F5C", "#F2B134", "#F5EFE0"]   # deep teal, mustard, cream
+  style_notes: >
+    Flat vector illustration, bold simple shapes, no gradients, no photo realism,
+    friendly and warm, lots of empty space around the subject.
+watermark: "Juniper & Ash"
+
+assets:
+  - id: instagram-post
+    prompt: >
+      Flat vector illustration of a single coffee cup with three wavy steam lines,
+      centred, in front of a large round mustard sun on a deep teal background
+    text: FRESH ROAST
+    sizes: [1080x1080, 600x600]
+    count: 1
+
+  - id: web-banner
+    prompt: >
+      Flat vector illustration of an open hand waving hello next to a coffee cup,
+      in front of a large round mustard sun on a deep teal background
+    text: WELCOME BACK
+    sizes: [1200x628, 600x314]
+    count: 1
+
+  - id: story
+    prompt: >
+      Flat vector illustration of a single green coffee leaf on a stem in front of
+      a large round mustard sun on a deep teal background
+    text: NEW BEANS
+    sizes: [1080x1920]
+    count: 1

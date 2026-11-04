@@ -1,0 +1,357 @@
+{
+  "run_id": "live-mock-qa",
+  "tool_version": "0.1.0",
+  "started_at": "2026-11-04T09:25:33+00:00",
+  "finished_at": "2026-11-04T09:26:02+00:00",
+  "status": "completed",
+  "stop_reason": null,
+  "brief": {
+    "source": "examples/brief.yaml",
+    "brand_name": "Juniper & Ash Coffee Co.",
+    "brand_colours": [
+      "#1F6F5C",
+      "#F2B134",
+      "#F5EFE0"
+    ],
+    "watermark": "Juniper & Ash"
+  },
+  "provider": "mock",
+  "qa_model": "claude-sonnet-5-5",
+  "settings": {
+    "max_cost_usd": 0.3,
+    "max_attempts": 3,
+    "retries": 3,
+    "min_score": 7
+  },
+  "totals": {
+    "provider_cost_usd": 0.0,
+    "qa_cost_usd": 0.045764,
+    "total_cost_usd": 0.045764,
+    "generation_calls": 7,
+    "qa_calls": 7,
+    "accepted": 2,
+    "failed": 1,
+    "not_run": 0
+  },
+  "assets": [
+    {
+      "asset_id": "instagram-post",
+      "variant": 1,
+      "status": "accepted",
+      "required_text": "FRESH ROAST",
+      "target_sizes": [
+        "1080x1080",
+        "600x600"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:25:33+00:00",
+          "prompt": "Flat vector illustration of a single coffee cup with three wavy steam lines, centred, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"FRESH ROAST\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": true,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 3,
+            "reasons": [
+              "Text is misspelled: reads \"RFESH RQAST\" instead of \"FRESH ROAST\". Render exactly \"FRESH ROAST\" with the letters in the correct order and an O (not Q) in ROAST.",
+              "Keep the illustration, layout and teal, mustard and cream palette unchanged; only fix the caption text."
+            ],
+            "text_seen": "RFESH RQAST",
+            "alt_text": "Flat illustration of a cream coffee cup with three steam lines on a mustard circle over teal, with the text RFESH RQAST.",
+            "passed": false,
+            "cost_usd": 0.007158,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.007158,
+          "accepted": false,
+          "error": null,
+          "raw_file": "raw/instagram-post_v1_a1.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": [
+              "garbled_text"
+            ]
+          },
+          "feedback_for_next_attempt": "the text was wrong (read as \"RFESH RQAST\"); it must read exactly \"FRESH ROAST\", correctly spelled, in large clean letters; Text is misspelled: reads \"RFESH RQAST\" instead of \"FRESH ROAST\". Render exactly \"FRESH ROAST\" with the letters in the correct order and an O (not Q) in ROAST.; Keep the illustration, layout and teal, mustard and cream palette unchanged; only fix the caption text."
+        },
+        {
+          "attempt": 2,
+          "started_at": "2026-11-04T09:25:38+00:00",
+          "prompt": "Flat vector illustration of a single coffee cup with three wavy steam lines, centred, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"FRESH ROAST\", spelled correctly, in large, clean, legible letters. No other text. Fix these problems from the previous attempt: the text was wrong (read as \"RFESH RQAST\"); it must read exactly \"FRESH ROAST\", correctly spelled, in large clean letters; Text is misspelled: reads \"RFESH RQAST\" instead of \"FRESH ROAST\". Render exactly \"FRESH ROAST\" with the letters in the correct order and an O (not Q) in ROAST.; Keep the illustration, layout and teal, mustard and cream palette unchanged; only fix the caption text..",
+          "seed": 1002,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 9,
+            "reasons": [],
+            "text_seen": "FRESH ROAST",
+            "alt_text": "Flat illustration of a cream coffee cup with three steam lines on a mustard circle over teal, with the text FRESH ROAST below.",
+            "passed": true,
+            "cost_usd": 0.006038,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006038,
+          "accepted": true,
+          "error": null,
+          "raw_file": "raw/instagram-post_v1_a2.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": []
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "final/instagram-post_v1_1080x1080.webp",
+          "width": 1080,
+          "height": 1080,
+          "format": "webp",
+          "bytes": 22528
+        },
+        {
+          "path": "final/instagram-post_v1_600x600.webp",
+          "width": 600,
+          "height": 600,
+          "format": "webp",
+          "bytes": 11600
+        }
+      ],
+      "alt_text": "Flat illustration of a cream coffee cup with three steam lines on a mustard circle over teal, with the text FRESH ROAST below.",
+      "accepted_attempt": 2
+    },
+    {
+      "asset_id": "web-banner",
+      "variant": 1,
+      "status": "failed",
+      "required_text": "WELCOME BACK",
+      "target_sizes": [
+        "1200x628",
+        "600x314"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:25:42+00:00",
+          "prompt": "Flat vector illustration of an open hand waving hello next to a coffee cup, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"WELCOME BACK\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": true,
+            "brand_colours_present": true,
+            "score": 5,
+            "reasons": [
+              "The hand is malformed: it has six fingers fanned out, plus a separate stick-like thumb pointing left that is detached from the palm and looks like a pin or stick.",
+              "Redraw the hand with exactly five fingers, with a natural thumb attached to the palm, and keep the palm and wrist proportions believable.",
+              "The hand is a disjointed set of shapes (round palm on a rectangular wrist), so make it a cohesive, recognisable open waving hand."
+            ],
+            "text_seen": "WELCOME BACK",
+            "alt_text": "Cream hand with six fingers waving beside a steaming coffee cup on a mustard circle, teal background, text WELCOME BACK.",
+            "passed": false,
+            "cost_usd": 0.006264,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006264,
+          "accepted": false,
+          "error": null,
+          "raw_file": "raw/web-banner_v1_a1.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": [
+              "extra_fingers"
+            ]
+          },
+          "feedback_for_next_attempt": "anatomy was wrong; hands must have exactly five fingers and no extra limbs; The hand is malformed: it has six fingers fanned out, plus a separate stick-like thumb pointing left that is detached from the palm and looks like a pin or stick.; Redraw the hand with exactly five fingers, with a natural thumb attached to the palm, and keep the palm and wrist proportions believable.; The hand is a disjointed set of shapes (round palm on a rectangular wrist), so make it a cohesive, recognisable open waving hand."
+        },
+        {
+          "attempt": 2,
+          "started_at": "2026-11-04T09:25:46+00:00",
+          "prompt": "Flat vector illustration of an open hand waving hello next to a coffee cup, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"WELCOME BACK\", spelled correctly, in large, clean, legible letters. No other text. Fix these problems from the previous attempt: anatomy was wrong; hands must have exactly five fingers and no extra limbs; The hand is malformed: it has six fingers fanned out, plus a separate stick-like thumb pointing left that is detached from the palm and looks like a pin or stick.; Redraw the hand with exactly five fingers, with a natural thumb attached to the palm, and keep the palm and wrist proportions believable.; The hand is a disjointed set of shapes (round palm on a rectangular wrist), so make it a cohesive, recognisable open waving hand..",
+          "seed": 1002,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": true,
+            "brand_colours_present": true,
+            "score": 4,
+            "reasons": [
+              "The hand is malformed: it shows only four fingers and no clear palm, and the thumb is a long horizontal stick pointing left and detached from the palm, so it reads as a pointer instead of a thumb.",
+              "Redraw the open waving hand with five distinct fingers, including a natural thumb attached to the palm, and a recognisable palm and wrist shape.",
+              "Keep the teal background, mustard sun, cream cup and the 'WELCOME BACK' text as they are."
+            ],
+            "text_seen": "WELCOME BACK",
+            "alt_text": "Cream hand waving beside a steaming coffee cup on a mustard circle against teal, with the text WELCOME BACK below.",
+            "passed": false,
+            "cost_usd": 0.006264,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006264,
+          "accepted": false,
+          "error": null,
+          "raw_file": "raw/web-banner_v1_a2.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": []
+          },
+          "feedback_for_next_attempt": "anatomy was wrong; hands must have exactly five fingers and no extra limbs; The hand is malformed: it shows only four fingers and no clear palm, and the thumb is a long horizontal stick pointing left and detached from the palm, so it reads as a pointer instead of a thumb.; Redraw the open waving hand with five distinct fingers, including a natural thumb attached to the palm, and a recognisable palm and wrist shape.; Keep the teal background, mustard sun, cream cup and the 'WELCOME BACK' text as they are."
+        },
+        {
+          "attempt": 3,
+          "started_at": "2026-11-04T09:25:49+00:00",
+          "prompt": "Flat vector illustration of an open hand waving hello next to a coffee cup, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"WELCOME BACK\", spelled correctly, in large, clean, legible letters. No other text. Fix these problems from the previous attempt: anatomy was wrong; hands must have exactly five fingers and no extra limbs; The hand is malformed: it shows only four fingers and no clear palm, and the thumb is a long horizontal stick pointing left and detached from the palm, so it reads as a pointer instead of a thumb.; Redraw the open waving hand with five distinct fingers, including a natural thumb attached to the palm, and a recognisable palm and wrist shape.; Keep the teal background, mustard sun, cream cup and the 'WELCOME BACK' text as they are..",
+          "seed": 1003,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": true,
+            "brand_colours_present": true,
+            "score": 5,
+            "reasons": [
+              "The hand is malformed: it shows four fingers drawn as thin sticks with no thumb in a natural position, and a stray horizontal bar sticks out from the left of the palm, which reads as a fifth digit or thumb at an impossible angle. Redraw the hand with five clearly separated fingers, including a properly positioned thumb, and no stray bars.",
+              "The palm is a circle on a rectangular wrist, so the hand shape looks crude and unnatural. Use a more recognisable open-hand silhouette.",
+              "The hand and cup are small relative to the sun and are not well balanced, with a lot of empty space. Enlarge or better balance the elements within the circle."
+            ],
+            "text_seen": "WELCOME BACK",
+            "alt_text": "Cream hand waving beside a steaming coffee cup on a mustard circle over teal, with the text WELCOME BACK below.",
+            "passed": false,
+            "cost_usd": 0.006894,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006894,
+          "accepted": false,
+          "error": null,
+          "raw_file": "raw/web-banner_v1_a3.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": []
+          },
+          "feedback_for_next_attempt": "anatomy was wrong; hands must have exactly five fingers and no extra limbs; The hand is malformed: it shows four fingers drawn as thin sticks with no thumb in a natural position, and a stray horizontal bar sticks out from the left of the palm, which reads as a fifth digit or thumb at an impossible angle. Redraw the hand with five clearly separated fingers, including a properly positioned thumb, and no stray bars.; The palm is a circle on a rectangular wrist, so the hand shape looks crude and unnatural. Use a more recognisable open-hand silhouette.; The hand and cup are small relative to the sun and are not well balanced, with a lot of empty space. Enlarge or better balance the elements within the circle."
+        }
+      ],
+      "files": [],
+      "alt_text": null,
+      "failure_reason": "no attempt passed QA in 3 tries"
+    },
+    {
+      "asset_id": "story",
+      "variant": 1,
+      "status": "accepted",
+      "required_text": "NEW BEANS",
+      "target_sizes": [
+        "1080x1920"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:25:54+00:00",
+          "prompt": "Flat vector illustration of a single green coffee leaf on a stem in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"NEW BEANS\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": false,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": false,
+            "score": 2,
+            "reasons": [
+              "Background is hot magenta, not deep teal (#1F6F5C); change the background to deep teal.",
+              "The circle is neon green, not a mustard sun (#F2B134); make it a large round mustard-yellow sun.",
+              "Palette (magenta, neon green, violet) clashes with the brand colours; use only teal #1F6F5C, mustard #F2B134 and cream #F5EFE0.",
+              "The leaf is a dull grey-green oval with purple veins; draw a clear green coffee leaf on a stem with natural colours that fit the brand.",
+              "Text is violet on magenta and off-brand; set 'NEW BEANS' in cream #F5EFE0 on the teal background for contrast and brand fit."
+            ],
+            "text_seen": "NEW BEANS",
+            "alt_text": "A green leaf with purple veins inside a bright green circle on a magenta background above the text NEW BEANS.",
+            "passed": false,
+            "cost_usd": 0.007028,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.007028,
+          "accepted": false,
+          "error": null,
+          "raw_file": "raw/story_v1_a1.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": [
+              "off_brand_colours"
+            ]
+          },
+          "feedback_for_next_attempt": "the palette was off-brand; use only the brand colours; the image did not match the description; Background is hot magenta, not deep teal (#1F6F5C); change the background to deep teal.; The circle is neon green, not a mustard sun (#F2B134); make it a large round mustard-yellow sun.; Palette (magenta, neon green, violet) clashes with the brand colours; use only teal #1F6F5C, mustard #F2B134 and cream #F5EFE0.; The leaf is a dull grey-green oval with purple veins; draw a clear green coffee leaf on a stem with natural colours that fit the brand.; Text is violet on magenta and off-brand; set 'NEW BEANS' in cream #F5EFE0 on the teal background for contrast and brand fit."
+        },
+        {
+          "attempt": 2,
+          "started_at": "2026-11-04T09:25:57+00:00",
+          "prompt": "Flat vector illustration of a single green coffee leaf on a stem in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"NEW BEANS\", spelled correctly, in large, clean, legible letters. No other text. Fix these problems from the previous attempt: the palette was off-brand; use only the brand colours; the image did not match the description; Background is hot magenta, not deep teal (#1F6F5C); change the background to deep teal.; The circle is neon green, not a mustard sun (#F2B134); make it a large round mustard-yellow sun.; Palette (magenta, neon green, violet) clashes with the brand colours; use only teal #1F6F5C, mustard #F2B134 and cream #F5EFE0.; The leaf is a dull grey-green oval with purple veins; draw a clear green coffee leaf on a stem with natural colours that fit the brand.; Text is violet on magenta and off-brand; set 'NEW BEANS' in cream #F5EFE0 on the teal background for contrast and brand fit..",
+          "seed": 1002,
+          "provider": "mock",
+          "generated": true,
+          "cost_usd": 0.0,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 8,
+            "reasons": [
+              "The leaf's midrib extends past the leaf shape at the top and bottom, so it looks like a stick laid over the leaf rather than a leaf on a stem. Draw the stem and veins so they sit inside the leaf outline, with a short stem emerging from the base.",
+              "The leaf is small relative to the sun and the leaf green is not one of the brand colours; make the leaf larger or use a closer brand-compatible green."
+            ],
+            "text_seen": "NEW BEANS",
+            "alt_text": "Flat illustration of a green leaf on a mustard circle against a deep teal background, with the text NEW BEANS below.",
+            "passed": true,
+            "cost_usd": 0.006118,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006118,
+          "accepted": true,
+          "error": null,
+          "raw_file": "raw/story_v1_a2.png",
+          "estimated_cost_usd": 0.02,
+          "provider_meta": {
+            "injected_defects": []
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "final/story_v1_1080x1920.webp",
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "bytes": 23874
+        }
+      ],
+      "alt_text": "Flat illustration of a green leaf on a mustard circle against a deep teal background, with the text NEW BEANS below.",
+      "accepted_attempt": 2
+    }
+  ]
+}

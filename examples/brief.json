@@ -1,0 +1,8 @@
+{
+  "brand": {"name": "Juniper & Ash Coffee Co.", "colours": ["#1F6F5C", "#F2B134", "#F5EFE0"],
+            "style_notes": "Flat vector illustration, bold simple shapes."},
+  "assets": [
+    {"id": "square", "prompt": "Flat vector illustration of a coffee cup on a teal background",
+     "text": "OPEN", "sizes": ["800x800"]}
+  ]
+}

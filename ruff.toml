@@ -1,0 +1,9 @@
+target-version = "py39"
+line-length = 120
+extend-exclude = [".venv"]
+
+[lint]
+select = ["E", "F", "W", "I", "B"]
+
+[lint.per-file-ignores]
+"media_pipeline/qa.py" = ["E501"]  # the reviewer prompt is one line per rule

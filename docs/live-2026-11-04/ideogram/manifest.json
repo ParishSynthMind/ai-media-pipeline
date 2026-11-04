@@ -1,0 +1,254 @@
+{
+  "run_id": "live-ideogram",
+  "tool_version": "0.1.0",
+  "started_at": "2026-11-04T09:26:11+00:00",
+  "finished_at": "2026-11-04T09:26:41+00:00",
+  "status": "completed",
+  "stop_reason": null,
+  "brief": {
+    "source": "examples/brief.yaml",
+    "brand_name": "Juniper & Ash Coffee Co.",
+    "brand_colours": [
+      "#1F6F5C",
+      "#F2B134",
+      "#F5EFE0"
+    ],
+    "watermark": "Juniper & Ash"
+  },
+  "provider": "ideogram",
+  "qa_model": "claude-sonnet-5-5",
+  "settings": {
+    "max_cost_usd": 0.6,
+    "max_attempts": 3,
+    "retries": 3,
+    "min_score": 7
+  },
+  "totals": {
+    "provider_cost_usd": 0.09,
+    "qa_cost_usd": 0.015546,
+    "total_cost_usd": 0.105546,
+    "generation_calls": 3,
+    "qa_calls": 3,
+    "accepted": 3,
+    "failed": 0,
+    "not_run": 0
+  },
+  "assets": [
+    {
+      "asset_id": "instagram-post",
+      "variant": 1,
+      "status": "accepted",
+      "required_text": "FRESH ROAST",
+      "target_sizes": [
+        "1080x1080",
+        "600x600"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:26:11+00:00",
+          "prompt": "Flat vector illustration of a single coffee cup with three wavy steam lines, centred, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"FRESH ROAST\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "ideogram",
+          "generated": true,
+          "cost_usd": 0.03,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 9,
+            "reasons": [],
+            "text_seen": "FRESH ROAST",
+            "alt_text": "Flat illustration of a cream coffee cup with three steam lines in front of a yellow sun on teal, with the text FRESH ROAST.",
+            "passed": true,
+            "cost_usd": 0.006048,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.006048,
+          "accepted": true,
+          "error": null,
+          "raw_file": "raw/instagram-post_v1_a1.png",
+          "estimated_cost_usd": 0.05,
+          "provider_meta": {
+            "resolution": "1024x1024",
+            "generation_id": "yMO39tzZSRS37z3UPiU-Mg",
+            "rendering_speed": "turbo"
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "final/instagram-post_v1_1080x1080.webp",
+          "width": 1080,
+          "height": 1080,
+          "format": "webp",
+          "bytes": 35554
+        },
+        {
+          "path": "final/instagram-post_v1_1080x1080.png",
+          "width": 1080,
+          "height": 1080,
+          "format": "png",
+          "bytes": 408245
+        },
+        {
+          "path": "final/instagram-post_v1_600x600.webp",
+          "width": 600,
+          "height": 600,
+          "format": "webp",
+          "bytes": 18394
+        },
+        {
+          "path": "final/instagram-post_v1_600x600.png",
+          "width": 600,
+          "height": 600,
+          "format": "png",
+          "bytes": 175557
+        }
+      ],
+      "alt_text": "Flat illustration of a cream coffee cup with three steam lines in front of a yellow sun on teal, with the text FRESH ROAST.",
+      "accepted_attempt": 1
+    },
+    {
+      "asset_id": "web-banner",
+      "variant": 1,
+      "status": "accepted",
+      "required_text": "WELCOME BACK",
+      "target_sizes": [
+        "1200x628",
+        "600x314"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:26:21+00:00",
+          "prompt": "Flat vector illustration of an open hand waving hello next to a coffee cup, in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"WELCOME BACK\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "ideogram",
+          "generated": true,
+          "cost_usd": 0.03,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 9,
+            "reasons": [],
+            "text_seen": "WELCOME BACK",
+            "alt_text": "Illustration of a raised open hand beside a yellow coffee cup in front of a mustard sun on teal, with the text WELCOME BACK.",
+            "passed": true,
+            "cost_usd": 0.00472,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.00472,
+          "accepted": true,
+          "error": null,
+          "raw_file": "raw/web-banner_v1_a1.png",
+          "estimated_cost_usd": 0.05,
+          "provider_meta": {
+            "resolution": "1408x704",
+            "generation_id": "CGpHsMZyQ0eIgN6VY31v8Q",
+            "rendering_speed": "turbo"
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "final/web-banner_v1_1200x628.webp",
+          "width": 1200,
+          "height": 628,
+          "format": "webp",
+          "bytes": 34974
+        },
+        {
+          "path": "final/web-banner_v1_1200x628.png",
+          "width": 1200,
+          "height": 628,
+          "format": "png",
+          "bytes": 325455
+        },
+        {
+          "path": "final/web-banner_v1_600x314.webp",
+          "width": 600,
+          "height": 314,
+          "format": "webp",
+          "bytes": 15630
+        },
+        {
+          "path": "final/web-banner_v1_600x314.png",
+          "width": 600,
+          "height": 314,
+          "format": "png",
+          "bytes": 115979
+        }
+      ],
+      "alt_text": "Illustration of a raised open hand beside a yellow coffee cup in front of a mustard sun on teal, with the text WELCOME BACK.",
+      "accepted_attempt": 1
+    },
+    {
+      "asset_id": "story",
+      "variant": 1,
+      "status": "accepted",
+      "required_text": "NEW BEANS",
+      "target_sizes": [
+        "1080x1920"
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-11-04T09:26:30+00:00",
+          "prompt": "Flat vector illustration of a single green coffee leaf on a stem in front of a large round mustard sun on a deep teal background. Style: Flat vector illustration, bold simple shapes, no gradients, no photo realism, friendly and warm, lots of empty space around the subject. Use the Juniper & Ash Coffee Co. brand palette: #1F6F5C, #F2B134, #F5EFE0. The image must include the exact text \"NEW BEANS\", spelled correctly, in large, clean, legible letters. No other text.",
+          "seed": 1001,
+          "provider": "ideogram",
+          "generated": true,
+          "cost_usd": 0.03,
+          "qa": {
+            "matches_prompt": true,
+            "garbled_text": false,
+            "anatomy_issues": false,
+            "brand_colours_present": true,
+            "score": 9,
+            "reasons": [],
+            "text_seen": "NEW BEANS",
+            "alt_text": "Flat illustration of a green leafy plant in front of a large yellow sun on a teal background with the text NEW BEANS.",
+            "passed": true,
+            "cost_usd": 0.004778,
+            "model": "claude-sonnet-5-5",
+            "error": null
+          },
+          "qa_cost_usd": 0.004778,
+          "accepted": true,
+          "error": null,
+          "raw_file": "raw/story_v1_a1.png",
+          "estimated_cost_usd": 0.05,
+          "provider_meta": {
+            "resolution": "736x1312",
+            "generation_id": "A0OLDKAyQPOQrr8ld_RTpg",
+            "rendering_speed": "turbo"
+          }
+        }
+      ],
+      "files": [
+        {
+          "path": "final/story_v1_1080x1920.webp",
+          "width": 1080,
+          "height": 1920,
+          "format": "webp",
+          "bytes": 56006
+        },
+        {
+          "path": "final/story_v1_1080x1920.png",
+          "width": 1080,
+          "height": 1920,
+          "format": "png",
+          "bytes": 638808
+        }
+      ],
+      "alt_text": "Flat illustration of a green leafy plant in front of a large yellow sun on a teal background with the text NEW BEANS.",
+      "accepted_attempt": 1
+    }
+  ]
+}

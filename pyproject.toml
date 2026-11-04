@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-media-pipeline"
+version = "0.1.0"
+description = "Batch AI image generation with a hard cost cap, Claude vision QA, regeneration with feedback and a manifest per run"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+  "Pillow>=10.1",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+  "anthropic>=2.0; python_version >= '3.10'",
+]
+
+[project.scripts]
+media-pipeline = "media_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["media_pipeline*"]
